@@ -1,0 +1,2 @@
+@echo off
+powershell -Command "& {\n    Write-Host 'Optimizing HTML files...';\n    python optimize_html.py;\n    Write-Host 'Adding optimized files to git...';\n    git add .;\n}"
